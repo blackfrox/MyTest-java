@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/item_layout"
+              android:layout_margin="5dp"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/latest_news_image"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:textSize="16sp"
+        android:layout_margin="6dp"
+        android:text="text for this app"
+        android:id="@+id/latest_news_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:background="#aaa"/>
+</LinearLayout>
