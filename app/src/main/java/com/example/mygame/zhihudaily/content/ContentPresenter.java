@@ -37,7 +37,9 @@ public class ContentPresenter implements ContentContract.Presenter {
           model.getCommentNum(new CallBackComment() {
               @Override
               public void getNewsExtra(StoryExtra storyExtra) {
-                  view.setFabVisible();
+                  if (storyExtra.getLong_comments()!=0){
+                      view.setFabVisible();
+                  }
               }
           },id);
     }

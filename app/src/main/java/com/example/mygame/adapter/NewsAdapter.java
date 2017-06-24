@@ -14,6 +14,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.example.mygame.R;
 import com.example.mygame.bean.LatestNews;
+import com.example.mygame.zhihudaily.content.ContentActivity;
 
 import java.util.List;
 
@@ -59,9 +60,9 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder>{
                 int position=viewHolder.getAdapterPosition();
                 LatestNews.StoriesBean storiesBean=storiedList.get(position);
                 int id=storiesBean.getId();
-//                Intent intent=new Intent(context,ContentActivity.class);
-//                intent.putExtra(NEWS_ID,id);
-//                context.startActivity(intent);
+                Intent intent=new Intent(context,ContentActivity.class);
+                intent.putExtra(NEWS_ID,id);
+                context.startActivity(intent);
             }
         });
         return viewHolder;

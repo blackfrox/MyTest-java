@@ -19,6 +19,8 @@
         </activity>
         <activity android:name=".zhihudaily.content.ContentActivity">
         </activity>
+        <activity android:name=".zhihudaily.comment.CommentActivity">
+        </activity>
     </application>
 
 </manifest>

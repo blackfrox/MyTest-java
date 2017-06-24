@@ -1,0 +1,24 @@
+package com.example.mygame.util;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
+/**
+ * Created by Admin on 2017/6/24.
+ */
+
+public class HtmlFormat {
+
+    //使图片自适应屏幕
+    public static String getNewContent(String htmltext){
+        Document doc= Jsoup.parse(htmltext);
+        Elements elements=doc.getElementsByTag("img");
+        for (Element element:elements){
+            if (!element.attr("class").equals("avatar"))
+                element.attr("width","100%").attr("height","auto");
+        }
+        return doc.toString();
+    }
+}

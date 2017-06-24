@@ -22,7 +22,7 @@
             android:fitsSystemWindows="true"
             android:layout_height="match_parent"
             app:contentScrim="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll||exitUntilCollapsed">
+           >
 
             <ImageView
                 android:id="@+id/news_image"
